@@ -4,6 +4,12 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
 
     <IsPackable>false</IsPackable>
+
+    <PackageProjectUrl>https://github.com/digital-synapse/Retrodactyl.Chess.Core.UnitTests</PackageProjectUrl>
+
+    <RepositoryUrl>https://github.com/digital-synapse/Retrodactyl.Chess.Core.UnitTests</RepositoryUrl>
+
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,6 +33,10 @@
   <ItemGroup>
     <None Update="xunit.runner.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
     </None>
   </ItemGroup>
 
