@@ -225,5 +225,15 @@ namespace Retrodactyl.Chess.Core.UnitTests
             Player.White.Should().Be(board.CurrentPlayer);
             board.ply.Should().Be(1);
         }
+
+        [Theory]
+        [InlineData("4k3/3PP3/4K3/8/8/8/8/8 b 2")]
+        [InlineData("R5k1/5ppp/8/8/8/8/8/6K1 b 2")]
+        [InlineData("6k1/5pQp/8/8/8/8/8/B5K1 b 2")]
+        public void CheckMate(string fen)
+        {
+            var board = new Board(fen);
+            board.IsMate.Should().BeTrue();
+        }
     }
 }
