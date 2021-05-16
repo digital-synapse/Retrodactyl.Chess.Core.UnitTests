@@ -10,6 +10,8 @@
     <RepositoryUrl>https://github.com/digital-synapse/Retrodactyl.Chess.Core.UnitTests</RepositoryUrl>
 
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+
+    <Authors>digital-synapse</Authors>
   </PropertyGroup>
 
   <ItemGroup>
